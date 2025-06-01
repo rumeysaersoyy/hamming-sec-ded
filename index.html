@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamming SEC-DED Simülasyonu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hamming SEC-DED Simülatörü</h1>
+
+    <!-- Bit uzunluğu seçimi -->
+    <label for="bitLength"><strong>Bit Uzunluğu Seç:</strong></label>
+    <select id="bitLength" onchange="bitUzunluguDegisti()">
+        <option value="8" selected>8 Bit</option>
+        <option value="16">16 Bit</option>
+        <option value="32">32 Bit</option>
+    </select><br><br>
+
+    <!-- Veri Girişi -->
+    <label for="dataInput"><strong>Veri Girişi:</strong></label>
+    <input type="text" id="dataInput" maxlength="32" placeholder="örnek: 10101010"><br><br>
+
+    <!-- Kodlama ve Hata Butonları -->
+    <button onclick="kodla()">Kodla</button>
+    <button onclick="hataOlustur()">Rastgele Hata Oluştur</button>
+
+    <!-- Belirli pozisyona hata -->
+    <label for="errorPos"><strong>Hata Pozisyonu Seç:</strong></label>
+    <select id="errorPos"></select>
+    <button onclick="hataOlusturDropdown()">Seçili Bit'te Hata Oluştur</button>
+
+    <button onclick="hataKontrolEt()">Hata Tespit & Düzelt</button>
+
+    <br><br>
+
+    <!-- Çıktılar -->
+    <p><strong>Hamming Kodu:</strong> <span id="output"></span></p>
+    <p><strong>Toplam Parity (p0):</strong> <span id="overallParity"></span></p>
+    <p><strong>Düzeltilmiş Kod:</strong> <span id="duzeltilmisKod"></span></p>
+    <p id="hataDurumu" style="font-weight: bold;"></p>
+
+    <!-- Bit pozisyonlarının gösterimi -->
+    <p><strong>Bit Pozisyonları:</strong></p>
+    <p id="bitPozisyonlari">[p1, p2, d1, p4, d2, d3, d4, p8, d5, d6, d7, d8]</p>
+
+    <!-- Açıklama Kutusu -->
+    <details>
+        <summary><strong>SEC-DED Nedir?</strong></summary>
+        <p>
+            SEC-DED (Single Error Correction - Double Error Detection), Hamming koduna eklenen genel bir parity biti ile
+            tek bitlik hataları düzeltebilir ve iki bitlik hataları algılayabilir.
+        </p>
+    </details>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Genel Sayfa Ayarları */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4faff;
+    color: #333;
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Başlık */
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #c2185b;
+}
+
+/* Etiketler */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Giriş Alanı */
+input[type="text"], select {
+    padding: 10px;
+    font-size: 16px;
+    width: 220px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Butonlar */
+button {
+    padding: 10px 16px;
+    margin: 6px;
+    font-size: 16px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+/* Çıktılar */
+#output, #overallParity, #duzeltilmisKod {
+    font-weight: bold;
+    color: #222;
+    font-size: 18px;
+}
+
+#hataDurumu {
+    font-size: 16px;
+    color: #d63333;
+    margin-top: 10px;
+}
+
+/* Açıklama */
+details {
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
