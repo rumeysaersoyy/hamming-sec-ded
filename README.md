@@ -49,7 +49,7 @@ Aşağıda simülasyonun bazı ekran görüntüleri yer almaktadır:
 
 ## 🔗 Proje Bağlantıları
 
-- 🎥 [Demo Videosu (YouTube)] 
+- 🎥 [Demo Videosu (YouTube)](https://www.youtube.com/watch?v=a_TyuVLf-qw)
 - 💻 [Canlı Demo / GitHub Pages](https://rumeysaersoyy.github.io/hamming-sec-ded)
 
 ---
